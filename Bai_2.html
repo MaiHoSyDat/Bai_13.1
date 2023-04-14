@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    const a = window.prompt("nhập dãy số");
+    const chuoi = a.toString();
+    const mang = [chuoi[0]];
+
+    for (let i = 1; i < chuoi.length; i++)
+    {
+        if ((chuoi[i - 1] % 2 == 0) && (chuoi[i] % 2 == 0))
+        {
+            mang.push("-", chuoi[i])
+        }
+        else
+        {
+            mang.push(chuoi[i]);
+        }
+    }
+    document.write(mang.join(""))
+</script>

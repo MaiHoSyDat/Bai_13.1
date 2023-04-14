@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = prompt() // abcde      i = 0
+    let b = [];
+    for (let i = 0; i < a.length; i++){
+        if (a[i] >= 'a' && a[i] <= 'z'){
+            b.push(String.fromCharCode(a.charCodeAt(i) - 32))
+        }else if (a[i] >= 'A' && a[i] <= 'Z'){
+            b.push(String.fromCharCode(a.charCodeAt(i) + 32))
+        }else {
+            b.push(a[i])
+        }
+
+    } alert(b.join(""))
+
+
+
+
+    // var str = 'Mai Ho Sy Dat';
+    // var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    // var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    // var result = [];
+    //
+    // for (let x = 0; x < str.length; x++) {
+    //     if (UPPER.indexOf(str[x]) !== -1) {
+    //         result.push(LOWER[UPPER.indexOf(str[x])]);
+    //     } else if (LOWER.indexOf(str[x]) !== -1) {
+    //         result.push(UPPER[LOWER.indexOf(str[x])]);
+    //     } else {
+    //         result.push(str[x]);
+    //     }
+    // }
+    // document.write(result.join(''));
+</script>
